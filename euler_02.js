@@ -6,16 +6,17 @@
 // By considering the terms in the Fibonacci sequence whose values do not
 // exceed four million, find the sum of the even-valued terms.
 
-var first_term = 1,
-    second_term = 2,
-    third_term = 0,
+var firstTerm = 1,
+    secondTerm = 2,
+    thirdTerm = 0,
     result = 2;
 
-while(third_term < 4000000) {
-  third_term = first_term + second_term;
-  first_term = second_term; // reassigns variables
-  second_term = third_term; // reassigns variables
-  if(third_term % 2 === 0) { // if even, add to result
-    result = third_term + result;
+while(thirdTerm < 4000000) {
+  thirdTerm = firstTerm + secondTerm;
+  firstTerm = secondTerm; // reassigns variables
+  secondTerm = thirdTerm; // reassigns variables
+  if(thirdTerm % 2 === 0) { // if even, add to result
+    result = thirdTerm + result;
+    console.log(result);
   }
 }
